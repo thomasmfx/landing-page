@@ -204,3 +204,16 @@ body {
     font-size: 16px;
     color: #252a2a;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2D3A3A;
+    padding: 25px;
+}
+
+.footer p {
+    display: flex;
+    font-size: 14px;
+    color: #bfbdc1;
+}
