@@ -2,7 +2,6 @@
 
 *, *::before, *::after {
     margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -17,6 +16,7 @@ body {
     padding-top: 20px;
     padding-bottom: 50px;
     justify-content: space-around;
+    align-items: center;
 }
 
 .header-logo {
@@ -27,12 +27,12 @@ body {
 
 .header-link {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     font-size: 18px;
+    column-gap: 25px;
 }
 
 .header-link.text {
-    margin-left: 50px;
     color: #bfbdc1;
 }
 
@@ -40,7 +40,7 @@ body {
     display: flex;
     background-color: #2D3A3A;
     color: #FCFFFC;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 70px;
 }
@@ -48,7 +48,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    max-width: 450px;
 }
 
 .content .heading {
@@ -80,7 +80,6 @@ body {
     display: flex;
     height: 250px;
     width: auto;
-    margin-left: 300px;
 }
 
 .info-container {
@@ -94,37 +93,41 @@ body {
     font-size: 36px;
     color: #2D3A3A;
     font-weight: bold;
+    text-align: center;
 }
 
 .box-container {
     display: flex;
     justify-content: center;
-    column-gap: 45px;
-    margin: 0px 350px 0px 350px;
+    column-gap: 40px;
 }
 
 .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-basis: 15%;
+    flex-shrink: 1;
 }
 
 .box {
     display: flex;
-    width: 25%;
     justify-content: center;
     padding: 85px;
     border: 5px solid #2ba84a;
     border-radius: 10px;
-    margin: 0px 20px 5px 20px;
-    flex: 1 0 20%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    flex-shrink: 1;
 }
 
 .box-text {
     display: flex;
-    justify-content: space-around;
     text-align: center;
-    max-width: 21%;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-shrink: 1;
+    
 }
 
 .quote-container   {
@@ -142,7 +145,7 @@ body {
     text-align: left;
     flex-basis: 50%;
     font-style: italic;
-    margin: 0px 200px 0px 200px;
+
 }
 
 .quote .quote-author {
@@ -150,60 +153,10 @@ body {
     justify-content: flex-end;
     font-weight: bold;
     font-style: normal;
-    margin: 30px 0px 0px 0px;
+    margin-top: 30px;
+    text-align: right;
 }
 
-.last-section-container {
-    display: flex;
-    justify-content: center;
-    padding: 150px 100px 150px 100px;
-}
-
-.last-section {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #2ba84a;
-    padding: 35px 45px 35px 45px;
-    flex-basis: 60%;
-    border-radius: 7px;
-}
-
-.last-section .invite {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70%;
-}
-.invite .invite-heading {
-    display: flex;
-    font-size: 24px;
-    font-weight: 600;
-    color: #2D3A3A;
-}
-
-.invite-text {
-    display: flex;
-    color: #E5E7EB;
-}
-
-.last-section .last-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.last-button .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 30px 10px 30px;
-    margin: 10px 0px 0px 0px;
-    border-radius: 10px;
-    background-color: #2ba84a;
-    border-color: #2D3A3A;
-    border-style: solid;
-    font-size: 16px;
-    color: #252a2a;
-}
 
 .footer {
     display: flex;
